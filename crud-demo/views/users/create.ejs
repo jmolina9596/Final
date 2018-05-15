@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create a User</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script type="text/javascript" src="/javascripts/create_user.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-dark bg-primary text-white">Contact Management
+      <form class="form-inline">
+        <a href="/users" role="button" class="btn btn-outline-light">Index</a>
+        <button class="btn btn-outline-light">New</button>
+      </form>
+    </nav>
+  </div>
+  <br><br>
+  <h1>New Contact</h1>
+  <table>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>
+          <input type="text" name="name" />
+        </td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>
+          <textarea name="address"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Position</td>
+        <td>
+          <input type="text" name="position" />
+        </td>
+      </tr>
+      <tr>
+        <td>Salary</td>
+        <td>
+          <input type="number" name="salary" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button id="createButton">Create User</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

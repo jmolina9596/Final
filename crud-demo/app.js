@@ -4,13 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
 // load env
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").load();
 }
+
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
 var app = express();
 
@@ -54,4 +54,3 @@ mongoose
   .catch(err => console.error(err));
 
 module.exports = app;
-
