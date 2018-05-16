@@ -20,40 +20,24 @@
     </nav>
   </div>
   <br><br>
-  <h1>New Contact</h1>
-  <table>
-    <tbody>
-      <tr>
-        <td>Name:</td>
-        <td>
-          <input type="text" name="name" />
-        </td>
-      </tr>
-      <tr>
-        <td>Email:</td>
-        <td>
-          <input type="email" name="email" id="email">
-        </td>
-      </tr>
-      <tr>
-        <td>Phone:</td>
-        <td>
-          <input type="number" name="phone" />
-        </td>
-      </tr>
-      <!-- <tr>
-        <td>Salary</td>
-        <td>
-           <input type="number" name="salary" />
-        </td>
-      </tr> -->
-      <tr>
-        <td colspan="2">
-          <button id="createButton">Create User</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="container">
+    <h1>New Contact</h1>
+    <form class="main-form needs-validation" novalidate>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" name="name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="number" name="phone" class="form-control">
+      </div>
+      <button id="createButton" class="btn btn-success float-md-right">Submit</button>
+    </form>
+  </div>
 </body>
 
 </html>

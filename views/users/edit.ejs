@@ -15,7 +15,7 @@
   <div class="container">
     <nav class="navbar navbar-dark bg-primary text-white">Contact Management
       <form action="" class="form-inline">
-        <button class="btn btn-outline-light">Index</button>
+          <a href="/users" role="button" class="btn btn-outline-light">Index</a>
         <a href="/users" role="button" class="btn btn-outline-light">New</a>
       </form>
     </nav>
@@ -38,34 +38,7 @@
       </div>
       <button id="updateButton" class="btn btn-success float-md-right">Submit</button>
     </form>
-    <table>
-      <tbody>
-        <tr>
-          <td>Name:</td>
-          <td>
-            <input type="text" name="name" value="<%= user.name %>" />
-          </td>
-        </tr>
-        <tr>
-          <td>Email:</td>
-          <td>
-            <input type="email" name="email" id="email" value="<%= user.email %>">
-          </td>
-        </tr>
-        <tr>
-          <td>Phone:</td>
-          <td>
-            <input type="number" name="number" value="<%= user.phone %>" />
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <button id="updateButton" class="btn btn-success">Update</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+   </div>
 </body>
 
 </html>
