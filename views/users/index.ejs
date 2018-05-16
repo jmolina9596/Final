@@ -47,12 +47,13 @@
                 <%= users[i].salary%>
               </td>
               <td>
+               
+              </td>
+              <td>
                 <a class="btn btn-outline-warning" href="/users/user/<%= users[i]._id%>" role="button">
                   Edit
                 </a>
-              </td>
-              <td>
-                <button class="deleteButton" data-uid="<%= users[i]._id%>">
+                <button class="deleteButton btn btn-outline-danger" data-uid="<%= users[i]._id%>">
                   Delete
                 </button>
               </td>
