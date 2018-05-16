@@ -51,9 +51,8 @@ userController.update = function(req, res) {
     {
       $set: {
         name: updatedUser.name,
-        address: updatedUser.address,
-        position: updatedUser.position,
-        salary: updatedUser.salary
+        email: updatedUser.email,
+        phone: updatedUser.phone
       }
     },
     { new: true }, // return updated

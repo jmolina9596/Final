@@ -4,49 +4,63 @@
 <head>
   <title>Edit user</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="/javascripts/edit_user.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <h3>
-      <a href="/users">User List</a>
-    </h3>
-    <h1>Edit User</h1>
 
+  <div class="container">
+    <nav class="navbar navbar-dark bg-primary text-white">Contact Management
+      <form action="" class="form-inline">
+        <button class="btn btn-outline-light">Index</button>
+        <a href="/users" role="button" class="btn btn-outline-light">New</a>
+      </form>
+    </nav>
+  </div>
+  <br>
+  <div class="container">
+    <h1>Edit User</h1>
+    <form class="main-form needs-validation" novalidate>
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" value="<%= user.name %>" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" value="<%= user.email %>" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="number" name="number" value="<%= user.phone %>" class="form-control">
+      </div>
+      <button id="updateButton" class="btn btn-success float-md-right">Submit</button>
+    </form>
     <table>
       <tbody>
         <tr>
-          <td>Name</td>
+          <td>Name:</td>
           <td>
             <input type="text" name="name" value="<%= user.name %>" />
           </td>
         </tr>
         <tr>
-          <td>Address</td>
+          <td>Email:</td>
           <td>
-            <textarea name="address">
-              <%= user.address %>
-            </textarea>
+            <input type="email" name="email" id="email" value="<%= user.email %>">
           </td>
         </tr>
         <tr>
-          <td>Position</td>
+          <td>Phone:</td>
           <td>
-            <input type="text" name="position" value="<%= user.position %>" />
-          </td>
-        </tr>
-        <tr>
-          <td>Salary</td>
-          <td>
-            <input type="number" name="salary" value="<%= user.salary %>" />
+            <input type="number" name="number" value="<%= user.phone %>" />
           </td>
         </tr>
         <tr>
           <td colspan="2">
-            <button id="updateButton">Update</button>
+            <button id="updateButton" class="btn btn-success">Update</button>
           </td>
         </tr>
       </tbody>
